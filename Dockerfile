@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER xjd <xing.jiudong@trans-cosmos.com.cn>
 
 USER root
@@ -8,6 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     INITRD=No \
     LANG=C.UTF-8  
 
+# add user and group
 ENV USER_NAME=java \
     USER_UID=4205 \
     GROUP_NAME=java \
